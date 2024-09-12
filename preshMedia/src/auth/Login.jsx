@@ -25,11 +25,14 @@ function Login() {
   };
 
   return (
-    <div className="flex justify-center h-[100vh] items-center ">
+    <div className="flex justify-center h-[100vh] items-center shadow-md ">
       <section>
         <div>
           <div class=" bg-gray-100  rounded-lg p-8 flex flex-col  w-[40vw] mt-10 md:mt-0">
-            <h2 class="text-gray-900 text-lg font-medium ">Sign Up</h2>
+            <h2 className="text-blue-600 m-auto font-[900] text-[20px] ">
+              Sochi Social
+            </h2>
+            <h2 class="text-gray-900 text-sm font-[10px]  mb-4">Sign In</h2>
             <form onSubmit={handleSubmit(handletobackend)}>
               <div class="relative mb-4">
                 <label for="email" class="leading-7 text-sm text-gray-600">

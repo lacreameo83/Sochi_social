@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { signInSchema } from "../validation/registerValidation";
+import { signInSchema } from "../validation/RegisterValidation";
 import { useNavigate } from "react-router-dom";
 
 function Register() {
@@ -21,12 +21,15 @@ function Register() {
     }, 3000);
   };
   return (
-    <div className="flex justify-center h-[100vh] items-center ">
+    <div className="flex justify-center h-[100vh] items-center shadow-md">
       <section class="text-gray-600 body-font">
         {/* <div class="container px-5 py-24 mx-auto flex flex-wrap items-center"> */}
         <div class=" bg-gray-100  rounded-lg p-8 flex flex-col  w-[40vw] mt-10 md:mt-0">
-          <h2 class="text-gray-900 text-lg font-medium title-font mb-5">
-            Sign Up
+          <h2 className="text-blue-600 m-auto font-[900] text-[20px] ">
+            Sochi Social
+          </h2>
+          <h2 class="text-gray-900 text-sm font-medium title-font mb-5">
+            Register Here
           </h2>
           <form onSubmit={handleSubmit(handletobackend)}>
             <div class="relative mb-4">
